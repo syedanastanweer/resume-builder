@@ -2,7 +2,7 @@
 
 ## Resume Builder
 
-<a href="https://eresume-builder.vercel.app/"><img src="./public/cover.jpg" alt="get started with resume builder" height="200" widdth="330" />
+<a href="https://eresume-builder.vercel.app/"><img src="./public/cover.jpg" alt="get started with resume builder" width="100%" />
 
 [![NextJS](https://skillicons.dev/icons?i=nextjs)](https://nextjs.org/)
 [![Material React](https://skillicons.dev/icons?i=materialui)](https://mui.com/)
@@ -25,7 +25,7 @@ Features:
 - No sign-up needed — go straight to the building!
 - Your data never leaves your device
 
-# Getting Started
+## Getting Started
 Download and install Node.js on your computer (https://nodejs.org/en/download/).
 
 Then, open VSCODE, drag the project folder to it. Open VSCODE terminal and install dependencies (you need to do this only in the first time)

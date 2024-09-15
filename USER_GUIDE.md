@@ -4,7 +4,7 @@ Resume Builder works best on a desktop.
 
 ## Building a Resume
 
-1. Visit https://e-resume.vercel.app/
+1. Visit https://eresume-builder.vercel.app
 1. Select "Editor" in the top pane
 1. Select "TEMPLATES" in the top pane and select your desired template
 1. Select "COLOURS" in the top pane and select your desired color scheme
@@ -14,7 +14,7 @@ Resume Builder works best on a desktop.
     - Download the resume as a PDF by selecting "DOWNLOAD AS PDF" in the top pane
 
 ## Editing a Resume
-1. Visit https://e-resume.vercel.app/
+1. Visit https://eresume-builder.vercel.app
 1. Select "Editor" in the top pane
 1. Select "Import in the top pane". Import the JSON that was generated in the [Building a Resume](#building-a-resume) section.
 
