@@ -1,22 +1,46 @@
-import React, { ChangeEvent, Fragment, useState } from 'react';
+import React, { ChangeEvent, Fragment } from 'react';
 import TextField from '@mui/material/TextField';
 
-const Contacts = ({
-  basicTabs,
-  onChangeHandler,
-}: {
-  basicTabs: any;
+type BasicTabs = {
+  name?: string;
+  image?: string;
+  label?: string;
+  email?: string;
+  url?: string;
+  phone?: string;
+  location?: {
+    city?: string;
+  };
+  relExp?: string;
+  totalExp?: string;
+};
+
+type ContactsProps = {
+  basicTabs: BasicTabs;
   onChangeHandler: (value: any, key: string) => void;
-}) => {
+};
+
+const Contacts = ({ basicTabs, onChangeHandler }: ContactsProps) => {
+  const {
+    name = '',
+    label = '',
+    email = '',
+    url = '',
+    phone = '',
+    location = { city: '' },
+    relExp = '',
+    totalExp = '',
+  } = basicTabs || {}; // Provide default values for destructuring
+
   const handleImageChange = (event: ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];
     if (file) {
       const reader = new FileReader();
       reader.onloadend = () => {
-        const base64Image = reader.result as string; // Base64 encoded image
-        onChangeHandler(base64Image, 'image'); // Update the image field in basicTabs
+        const base64Image = reader.result as string;
+        onChangeHandler(base64Image, 'image');
       };
-      reader.readAsDataURL(file); // Read the file as Data URL
+      reader.readAsDataURL(file);
     }
   };
 
@@ -26,7 +50,7 @@ const Contacts = ({
       <TextField
         label="Name"
         variant="filled"
-        value={basicTabs.name || ''}
+        value={name}
         onChange={(event: ChangeEvent<HTMLInputElement>) =>
           onChangeHandler(event.target.value, 'name')
         }
@@ -46,7 +70,7 @@ const Contacts = ({
       <TextField
         label="Title"
         variant="filled"
-        value={basicTabs.label || ''}
+        value={label}
         onChange={(event: ChangeEvent<HTMLInputElement>) =>
           onChangeHandler(event.target.value, 'label')
         }
@@ -58,7 +82,7 @@ const Contacts = ({
       <TextField
         label="Email"
         variant="filled"
-        value={basicTabs.email || ''}
+        value={email}
         onChange={(event: ChangeEvent<HTMLInputElement>) =>
           onChangeHandler(event.target.value, 'email')
         }
@@ -70,7 +94,7 @@ const Contacts = ({
       <TextField
         label="Website URL"
         variant="filled"
-        value={basicTabs.url || ''}
+        value={url}
         onChange={(event: ChangeEvent<HTMLInputElement>) =>
           onChangeHandler(event.target.value, 'url')
         }
@@ -82,7 +106,7 @@ const Contacts = ({
       <TextField
         label="Phone"
         variant="filled"
-        value={basicTabs.phone || ''}
+        value={phone}
         onChange={(event: ChangeEvent<HTMLInputElement>) =>
           onChangeHandler(event.target.value, 'phone')
         }
@@ -94,10 +118,10 @@ const Contacts = ({
       <TextField
         label="Location"
         variant="filled"
-        value={basicTabs.location?.city || ''}
+        value={location.city || ''}
         onChange={(event: ChangeEvent<HTMLInputElement>) => {
-          const location = { ...basicTabs.location, city: event.target.value };
-          onChangeHandler(location, 'location');
+          const updatedLocation = { ...location, city: event.target.value };
+          onChangeHandler(updatedLocation, 'location');
         }}
         fullWidth
         margin="normal"
@@ -107,7 +131,7 @@ const Contacts = ({
       <TextField
         label="Relevant Experience"
         variant="filled"
-        value={basicTabs.relExp || ''}
+        value={relExp}
         onChange={(event: ChangeEvent<HTMLInputElement>) =>
           onChangeHandler(event.target.value, 'relExp')
         }
@@ -119,7 +143,7 @@ const Contacts = ({
       <TextField
         label="Total Experience"
         variant="filled"
-        value={basicTabs.totalExp || ''}
+        value={totalExp}
         onChange={(event: ChangeEvent<HTMLInputElement>) =>
           onChangeHandler(event.target.value, 'totalExp')
         }
