@@ -17,7 +17,7 @@ const Contacts = ({
       const reader = new FileReader();
       reader.onloadend = () => {
         const base64Image = reader.result as string; // Base64 encoded image
-        setSelectedImage(base64Image); 
+        setSelectedImage(base64Image);
         onChangeHandler(base64Image, 'image'); // Update the image field in basicTabs
       };
       reader.readAsDataURL(file); // Read the file as Data URL
@@ -40,8 +40,13 @@ const Contacts = ({
         type="file"
         onChange={handleImageChange}
       />
-      {selectedImage && <img src={selectedImage} alt="Selected" style={{ width: '100px', height: '100px', marginTop: '10px' }} />}
-      
+      {selectedImage && <img
+        src={selectedImage}
+        alt="Selected"
+        style={{ width: '100px', height: '100px', marginTop: '10px' }}
+      />
+      }
+
       <TextField
         label="Title"
         variant="filled"
