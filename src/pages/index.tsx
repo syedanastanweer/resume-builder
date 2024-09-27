@@ -1,5 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+
 import HomeLayout from 'src/modules/home/HomeLayout';
 
 const HomePage: NextPage = () => {

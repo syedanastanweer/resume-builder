@@ -3,10 +3,10 @@ import '@splidejs/splide/css';
 
 import Splide, { Splide as SplideCore } from '@splidejs/splide';
 import { useEffect, useRef } from 'react';
-
-import { AVAILABLE_TEMPLATES } from 'src/helpers/constants';
 import { Global } from '@emotion/react';
 import Image from 'next/image';
+
+import { AVAILABLE_TEMPLATES } from 'src/helpers/constants';
 import { useTemplates } from 'src/stores/useTemplate';
 
 export const TemplateSlider = () => {

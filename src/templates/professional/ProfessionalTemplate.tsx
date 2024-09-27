@@ -1,4 +1,8 @@
 import React, { useContext } from 'react';
+import styled from '@emotion/styled';
+
+import { SectionValidator } from 'src/helpers/common/components/ValidSectionRenderer';
+import { StateContext } from 'src/modules/builder/resume/ResumeLayout';
 
 import AboutMe from './components/AboutMe';
 import Achievements from './components/Achievements';
@@ -8,11 +12,8 @@ import Involvement from './components/Involvement';
 import { Objective } from './components/Objective';
 import RatedSkills from './components/RatedSkills';
 import { Section } from './components/Section';
-import { SectionValidator } from 'src/helpers/common/components/ValidSectionRenderer';
-import { StateContext } from 'src/modules/builder/resume/ResumeLayout';
 import UnratedSkills from './components/UnratedSkills';
 import Work from './components/Work';
-import styled from '@emotion/styled';
 
 const ResumeContainer = styled.div`
   display: flex;

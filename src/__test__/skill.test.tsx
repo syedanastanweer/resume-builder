@@ -1,6 +1,7 @@
 import React from 'react';
 import userEvent from '@testing-library/user-event';
 import { render, screen } from '@testing-library/react';
+
 import { ISkillItem } from 'src/stores/skill.interface';
 import Skill from 'src/modules/builder/editor/modules/skills/components/Skill';
 

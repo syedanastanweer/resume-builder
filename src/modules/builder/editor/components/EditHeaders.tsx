@@ -1,6 +1,8 @@
 import { Divider } from '@mui/material';
 import { motion } from 'framer-motion';
+
 import { headers } from 'src/helpers/constants/editor-data';
+
 import HeaderTitle from '../atoms/HeaderTitle';
 
 const animation = {

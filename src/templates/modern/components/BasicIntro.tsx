@@ -1,6 +1,8 @@
 import { BsGlobe } from 'react-icons/bs';
-import { ProfileContact } from '../atoms/ProfileContact';
+
 import { ProfileImage } from 'src/helpers/common/components/ProfileImage';
+
+import { ProfileContact } from '../atoms/ProfileContact';
 import { ProfileName } from '../atoms/ProfileName';
 import { SectionSubtitle } from '../atoms/SectionSubtitle';
 

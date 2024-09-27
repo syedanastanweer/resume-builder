@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 
-import DataHeaders from './components/EditHeaders';
-import EditSection from './components/EditSection';
 import ErrorBoundary from 'src/helpers/common/components/ErrorBoundary';
 import { OutlinedButton } from 'src/helpers/common/atoms/Buttons';
 import { headers } from 'src/helpers/constants/editor-data';
 import { resetResumeStore } from 'src/stores/useResumeStore';
+
+import EditSection from './components/EditSection';
+import DataHeaders from './components/EditHeaders';
 
 const EditorLayout = () => {
   const [link, setLink] = useState('');

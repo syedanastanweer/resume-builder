@@ -1,7 +1,7 @@
 import { Context, createContext, useEffect } from 'react';
+import { ThemeProvider } from '@mui/material/styles';
 
 import { AVAILABLE_TEMPLATES } from 'src/helpers/constants';
-import { ThemeProvider } from '@mui/material/styles';
 import { useResumeStore } from 'src/stores/useResumeStore';
 import { useTemplates } from 'src/stores/useTemplate';
 import { useThemes } from 'src/stores/themes';

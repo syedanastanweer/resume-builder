@@ -1,5 +1,6 @@
 import { useTemplates } from 'src/stores/useTemplate';
 import { useZoom } from 'src/stores/useZoom';
+
 import ResumeController from '../atoms/ResumeController';
 import { ResumeTitle } from '../atoms/ResumeTitle';
 

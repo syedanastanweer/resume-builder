@@ -1,4 +1,5 @@
 import dayjs from 'dayjs';
+
 import { dateParser } from 'src/helpers/utils';
 
 it('should test the dateParser util function', async () => {

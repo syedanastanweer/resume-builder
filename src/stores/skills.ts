@@ -1,8 +1,10 @@
 import create, { GetState, SetState } from 'zustand';
 import { persist } from 'zustand/middleware';
 import produce from 'immer';
-import { ISkillItem, ISkillState } from './skill.interface';
+
 import resumeData from 'src/helpers/constants/resume-data.json';
+
+import { ISkillItem, ISkillState } from './skill.interface';
 
 const addSkill =
   (set: SetState<ISkillState>) =>

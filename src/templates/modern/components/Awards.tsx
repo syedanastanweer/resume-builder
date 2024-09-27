@@ -1,10 +1,11 @@
 import { HTMLRenderer } from 'src/helpers/common/components/HTMLRenderer';
 import { IAwards } from 'src/stores/index.interface';
+import { dateParser } from 'src/helpers/utils';
+
 import { SectionHeading } from '../atoms/SectionHeading';
 import { SectionList } from '../atoms/SectionList';
 import { SectionSubtitle } from '../atoms/SectionSubtitle';
 import { SectionTitle } from '../atoms/SectionTitle';
-import { dateParser } from 'src/helpers/utils';
 
 export const AwardSection = ({ awardsReceived }: { awardsReceived: IAwards[] }) => {
   return (

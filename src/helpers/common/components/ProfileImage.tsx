@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+
 import { SectionValidator } from './ValidSectionRenderer';
 
 const RoundedImage = styled.img`

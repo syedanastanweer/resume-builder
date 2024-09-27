@@ -1,7 +1,8 @@
-import { IBasics } from 'src/stores/index.interface';
 import styled from '@emotion/styled';
 import Color from 'color';
 import Image from 'next/image';
+
+import { IBasics } from 'src/stores/index.interface';
 
 const Role = styled.span`
   color: ${(props) => Color(props.theme.titleColor).alpha(0.85).toString()};

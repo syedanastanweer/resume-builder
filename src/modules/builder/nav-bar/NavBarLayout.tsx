@@ -1,5 +1,11 @@
 import { ChangeEvent, useCallback, useRef, useState } from 'react';
-import { NavBarActions, NavBarMenu, StyledButton } from './atoms';
+import Image from 'next/image';
+import Link from 'next/link';
+import exportFromJSON from 'export-from-json';
+
+import { Toast } from 'src/helpers/common/atoms/Toast';
+import { AVAILABLE_TEMPLATES } from 'src/helpers/constants';
+import DEFAULT_RESUME_JSON from 'src/helpers/constants/resume-data.json';
 import {
   useDatabases,
   useFrameworks,
@@ -9,23 +15,18 @@ import {
   useTechnologies,
   useTools,
 } from 'src/stores/skills';
-
-import { AVAILABLE_TEMPLATES } from 'src/helpers/constants';
-import DEFAULT_RESUME_JSON from 'src/helpers/constants/resume-data.json';
-import Image from 'next/image';
-import Link from 'next/link';
-import { NavMenuItem } from './components/MenuItem';
-import { PrintResume } from './components/PrintResume';
-import { TemplateSelect } from './components/TemplateSelect';
-import { ThemeSelect } from './components/ThemeSelect';
-import { Toast } from 'src/helpers/common/atoms/Toast';
-import exportFromJSON from 'export-from-json';
 import { useActivity } from 'src/stores/activity';
 import { useAwards } from 'src/stores/awards';
 import { useBasicDetails } from 'src/stores/basic';
 import { useEducations } from 'src/stores/education';
 import { useExperiences } from 'src/stores/experience';
 import { useVoluteeringStore } from 'src/stores/volunteering';
+
+import { ThemeSelect } from './components/ThemeSelect';
+import { TemplateSelect } from './components/TemplateSelect';
+import { PrintResume } from './components/PrintResume';
+import { NavMenuItem } from './components/MenuItem';
+import { NavBarActions, NavBarMenu, StyledButton } from './atoms';
 
 const TOTAL_TEMPLATES_AVAILABLE = Object.keys(AVAILABLE_TEMPLATES).length;
 

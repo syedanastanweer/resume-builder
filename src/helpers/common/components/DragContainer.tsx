@@ -14,6 +14,7 @@ import {
   verticalListSortingStrategy,
 } from '@dnd-kit/sortable';
 import { restrictToVerticalAxis } from '@dnd-kit/modifiers';
+
 import { ISkillItem } from 'src/stores/skill.interface';
 
 export default function DragContainer({

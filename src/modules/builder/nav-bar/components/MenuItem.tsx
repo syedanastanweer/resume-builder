@@ -1,9 +1,10 @@
 import { Fragment, useState } from 'react';
+import Image from 'next/image';
+
+import { StyledButton } from '../atoms';
 
 import { INavMenuItemProps } from './MenuItem.interface';
-import Image from 'next/image';
 import { NavMenuPopover } from './NavMenuPopover';
-import { StyledButton } from '../atoms';
 
 export const NavMenuItem = ({ caption, popoverChildren }: INavMenuItemProps) => {
   const [anchorEl, setAnchorEl] = useState<HTMLButtonElement | null>(null);

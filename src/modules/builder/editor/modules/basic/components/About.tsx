@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+
 import { RichtextEditor } from 'src/helpers/common/components/richtext';
 
 const About = ({

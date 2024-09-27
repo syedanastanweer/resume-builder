@@ -1,3 +1,8 @@
+import { useContext } from 'react';
+
+import { StateContext } from 'src/modules/builder/resume/ResumeLayout';
+import { SectionValidator } from 'src/helpers/common/components/ValidSectionRenderer';
+
 import { BasicIntro } from './components/BasicIntro';
 import { EducationSection } from './components/Education';
 import { VolunteerSection } from './components/Volunteer';
@@ -6,9 +11,6 @@ import { SkillsSection } from './components/Skills';
 import { SummarySection } from './components/Summary';
 import { WorkSection } from './components/Work';
 import { AwardSection } from './components/Awards';
-import { useContext } from 'react';
-import { StateContext } from 'src/modules/builder/resume/ResumeLayout';
-import { SectionValidator } from 'src/helpers/common/components/ValidSectionRenderer';
 
 export default function MordernTemplate() {
   const resumeData = useContext(StateContext);

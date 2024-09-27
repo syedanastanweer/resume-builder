@@ -1,9 +1,12 @@
-import { ISkillItem } from 'src/stores/skill.interface';
-import AddSkill from './AddSkill';
-import SkillPill from '../atoms/SkillPill';
-import DragContainer from 'src/helpers/common/components/DragContainer';
 import { motion } from 'framer-motion';
 import { AnimatePresence } from 'framer-motion';
+
+import { ISkillItem } from 'src/stores/skill.interface';
+import DragContainer from 'src/helpers/common/components/DragContainer';
+
+import SkillPill from '../atoms/SkillPill';
+
+import AddSkill from './AddSkill';
 
 const animation = {
   initial: { height: '1px' },

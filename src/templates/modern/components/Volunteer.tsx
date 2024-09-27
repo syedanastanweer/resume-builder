@@ -1,10 +1,11 @@
 import { IVolunteer } from 'src/stores/index.interface';
+import { dateParser } from 'src/helpers/utils';
+import { HTMLRenderer } from 'src/helpers/common/components/HTMLRenderer';
+
 import { SectionHeading } from '../atoms/SectionHeading';
 import { SectionSubtitle } from '../atoms/SectionSubtitle';
 import { SectionTitle } from '../atoms/SectionTitle';
-import { dateParser } from 'src/helpers/utils';
 import { SectionList } from '../atoms/SectionList';
-import { HTMLRenderer } from 'src/helpers/common/components/HTMLRenderer';
 
 export const VolunteerSection = ({ volunteer }: { volunteer: IVolunteer[] }) => {
   return (

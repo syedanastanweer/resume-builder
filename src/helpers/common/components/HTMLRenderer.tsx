@@ -1,8 +1,8 @@
 import parseHtmlStringToHtml, { domToReact } from 'html-react-parser';
-
 import Link from 'next/link';
-import styles from './richtext/jodit.module.css';
 import { useMemo } from 'react';
+
+import styles from './richtext/jodit.module.css';
 
 export const HTMLRenderer = ({ htmlString }: { htmlString: string }) => {
   const parsedElement = useMemo(() => {

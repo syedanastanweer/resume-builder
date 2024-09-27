@@ -1,4 +1,5 @@
 import type { IJodit } from 'jodit/types';
+
 import styles from '../jodit.module.css';
 
 const linkFormOverride = (editor: IJodit) => {
