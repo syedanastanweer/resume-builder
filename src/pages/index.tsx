@@ -16,8 +16,14 @@ const HomePage: NextPage = () => {
         <meta property="og:title" content="Build Your Professional Resume Easily" />
         <meta property="og:site_name" content="Build Your Professional Resume Easily" />
         <meta property="og:url" content="https://eresume-builder.vercel.app/" />
-        <meta name="description" content="Create your professional resume with E-Resume, a simple, fast, and effective resume builder." />
-        <meta property="og:description" content="Create your professional resume with E-Resume, a simple, fast, and effective resume builder." />
+        <meta
+          name="description"
+          content="Create your professional resume with E-Resume, a simple, fast, and effective resume builder."
+        />
+        <meta
+          property="og:description"
+          content="Create your professional resume with E-Resume, a simple, fast, and effective resume builder."
+        />
         <meta property="og:image" content="/icons/resume-icon.png" />
 
         {/* Twitter Meta */}
@@ -29,11 +35,14 @@ const HomePage: NextPage = () => {
         <meta name="twitter:image" content="/icons/resume-icon.png" /> */}
 
         {/* Robots Meta */}
-        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+        <meta
+          name="robots"
+          content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+        />
         <meta name="googlebot" content="index, follow, max-snippet:-1" />
         <meta name="bingbot" content="index, follow, max-snippet:-1" />
 
-        <meta name="keywords" content="eresume, resumebuilder, cv, resume, resumecreator"/>
+        <meta name="keywords" content="eresume, resumebuilder, cv, resume, resumecreator" />
 
         {/* Favicon and Canonical */}
         <link rel="icon" type="image/png" href="/icons/resume-icon.png" />
