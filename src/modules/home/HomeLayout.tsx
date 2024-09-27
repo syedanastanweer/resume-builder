@@ -83,8 +83,8 @@ const HomeLayout = () => {
               />
             </div>
             <div className="col-span-12 sm:col-span-8">
-              <h3 className="text-xl md:text-2xl mb-2 text-resume-400">SIMPLEST WAY TO BUILD A</h3>
-              <h1 className="text-5xl mb-12 text-resume-800">Professional Resume</h1>
+              <h1 className="text-5xl mb-2 text-resume-800">Professional Resume</h1>
+              <h2 className="text-xl md:text-2xl mb-12 text-resume-400">SIMPLEST WAY TO BUILD</h2>
 
               <div className="flex mb-10">
                 <div className="bg-resume-800 w-1 rounded-lg"></div>
@@ -177,10 +177,10 @@ const HomeLayout = () => {
           A bunch of developers and designers — who love to build open source projects and learn
           along!
         </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 gap-8">
           <Person />
         </div>
-        <p className="text-resume-400 my-8 text-center lg:text-left">
+        {/* <p className="text-resume-400 my-8 text-center lg:text-left">
           Read our design story on&nbsp;
           <a
             href="https://medium.com/@yakshag/e-resume-build-a-professional-resume-design-case-study-3dc02a6359ea"
@@ -191,7 +191,7 @@ const HomeLayout = () => {
             Medium
           </a>
           ↗
-        </p>
+        </p> */}
       </div>
     </motion.div>
   );
